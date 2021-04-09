@@ -1,96 +1,140 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>おかえり</title>
-    <meta name="description" content="startpage">
-    <meta name="author" content="cappy">
-    <link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="load.css">
-		<link rel="stylesheet" href="font-awesome-4.6.3/font-awesome-4.6.3/css/font-awesome.css">
-		<link href="https://fonts.googleapis.com/css?family=Bitter|Merriweather" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title>おかえり</title>
+  <meta name="description" content="startpage">
+  <meta name="author" content="cappy">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="load.css">
+  <link rel="stylesheet" href="font-awesome-4.6.3/font-awesome-4.6.3/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Merriweather" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 
 <body>
-	<div id="loadgif"><img src="floop.png" id="load"></div>
+  <div id="loadgif"><img src="floop.png" id="load"></div>
   <div id="whiteblock"></div>
-	<div id="contain">
-		<div id="word">
-			yuritopia
-		</div>
+  <div id="contain">
+    <div id="word">
+      home
+    </div>
 
-		<form action="http://www.google.com/search" method="get" id="search">
-			<input type="text" name="q" alt="search" placeholder="google" autocomplete="off" autofocus>
-			<input type="submit" value="&#xf002;">
-		</form>
+    <div id="searchbar">
+      <form action="http://www.google.com/search" method="get">
+        <input id="searchinput" type="text" name="q" alt="search" placeholder="google" autocomplete="off" autofocus>
+        <i class="fas fa-search" id="searchbutton"></i>
+      </form>
+    </div>
 
-		<div id="links">
-			<div class="set">
-				<div class="head">art</div>
-				<ul>
-					<a href="https://twitter.com/" target="_blank"><li>twitter</li></a>
-					<a href="https://www.tumblr.com" target="_blank"><li>tumblr</li></a>
-					<a href="http://www.pixiv.net/" target="_blank"><li>pixiv</li></a>
-					<a href="http://danbooru.donmai.us/" target="_blank"><li>booru</li></a>
-				</ul>
-			</div>
+    <div id="links">
+      <div class="set">
+        <div class="head">one</div>
+        <ul>
+          <a href="" target="_blank">
+            <li>link one</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link two</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link three</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link four</li>
+          </a>
+        </ul>
+      </div>
 
-			<div class="set">
-				<div class="head">school</div>
-				<ul>
-					<a href="" target="_blank"><li>myuic</li></a>
-					<a href="" target="_blank"><li>blackboard</li></a>
-					<a href="" target="_blank"><li>email</li></a>
-					<a href="" target="_blank"><li>stats</li></a>
-				</ul>
-			</div>
+      <div class="set">
+        <div class="head">two</div>
+        <ul>
+          <a href="" target="_blank">
+            <li>link one</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link two</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link three</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link four</li>
+          </a>
+        </ul>
+      </div>
 
-			<div class="set">
-				<div class="head">work</div>
-				<ul>
-					<a href="https://mail.google.com/mail/u/1/#inbox" target="_blank"><li>email</li></a>
-					<a href="https://admin.typeform.com/workspaces/3911219/" target="_blank"><li>typeform</li></a>
-					<a href="https://tictail.com/" target="_blank"><li>tictail</li></a>
-					<a href="https://www.paypal.com/signin/?returnUri=https%3a//www.paypal.com/&state=%3fcmd%3d_ship-now" target="_blank"><li>shipping</li></a>
-				</ul>
-			</div>
+      <div class="set">
+        <div class="head">three</div>
+        <ul>
+          <a href="" target="_blank">
+            <li>link one</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link two</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link three</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link four</li>
+          </a>
+        </ul>
+      </div>
 
-			<div class="set">			
-				<div class="head">fun</div>
-				<ul>
-					<a href="https://www.youtube.com/" target="_blank"><li>youtube</li></a>
-					<a href="http://dynasty-scans.com/chapters/added" target="_blank"><li>dynasty</li></a>
-					<a href="http://boards.4chan.org/w/catalog#s=phone" target="_blank"><li>phone</li></a>
-					<a href="https://www.reddit.com/" target="_blank"><li>reddit</li></a>
-				</ul>
-			</div>
-		</div>
-	</div>
-	
-	<script>		
-		$(window).load(function() {
-      		$('#loadgif').fadeOut(800);
-			$('#whiteblock').fadeOut(800);
-		});
-		
-		function margin() {
-			var winht = $(window).height();
-			var containht = $('#contain').height();
-			var mar = (winht - containht)/2;
-			$('#contain').css('margin-top',mar+'px');
-		}
-				
-		$(function() {
-    var images = ['0.png','1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg'];
-			
-    $('body').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
-   });
-		
-		$(window).on('load resize', function() {
-		  margin();
-		});
-	</script>
+      <div class="set">
+        <div class="head">four</div>
+        <ul>
+          <a href="" target="_blank">
+            <li>link one</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link two</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link three</li>
+          </a>
+          <a href="" target="_blank">
+            <li>link four</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/9820cc1073.js" crossorigin="anonymous"></script>
+  <script>
+    $(window).load(function() {
+      $('#loadgif').fadeOut(800);
+      $('#whiteblock').fadeOut(800);
+    });
+
+    function margin() {
+      var winht = $(window).height();
+      var containht = $('#contain').height();
+      var mar = (winht - containht) / 2;
+      $('#contain').css('margin-top', mar + 'px');
+    }
+
+    $(function() {
+      //number of images in img folder
+      var imgct = 12;
+      //create array variable
+      var img = [];
+      for (i = 0; i < imgct; i++) {
+        img.push(i + `.jpg`);
+      }
+      //set bg image randomly
+      $('body').css({
+        'background-image': 'url(img/' + img[Math.floor(Math.random() * img.length)] + ')'
+      });
+    });
+    $(window).on('load resize', function() {
+      margin();
+    });
+  </script>
 </body>
+
 </html>
